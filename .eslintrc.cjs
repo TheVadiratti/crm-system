@@ -3,6 +3,7 @@ module.exports = {
   env: { browser: true, es2020: true },
   extends: [
     'airbnb',
+    'airbnb-typescript',
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:react-hooks/recommended',
@@ -18,6 +19,11 @@ module.exports = {
     'jsx-a11y',
     'prettier',
   ],
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: './tsconfig.app.json',
+  },
   rules: {
     'react-refresh/only-export-components': [
       'warn',
