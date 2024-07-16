@@ -1,4 +1,4 @@
 import { useDispatch, useSelector } from './hooks';
-import { type Dispatch, type RootState } from './store';
+import { store, type Dispatch, type RootState } from './store';
 
-export { type Dispatch, type RootState, useDispatch, useSelector };
+export { store, type Dispatch, type RootState, useDispatch, useSelector };
