@@ -7,7 +7,7 @@ interface LangResources {
     };
 
     header: {
-      numberOfWeek: string;
+      weekNumber: string;
       heading: string;
     };
   };

@@ -13,7 +13,7 @@ const resources: Resources = {
       },
 
       header: {
-        numberOfWeek: 'Неделя №',
+        weekNumber: 'Неделя №',
         heading: 'Навигация',
       },
     },
@@ -27,7 +27,7 @@ const resources: Resources = {
       },
 
       header: {
-        numberOfWeek: 'Week №',
+        weekNumber: 'Week №',
         heading: 'Navigation',
       },
     },

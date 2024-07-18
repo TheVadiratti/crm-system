@@ -6,6 +6,7 @@ import {
 import HomePage from '../pages/Home';
 import Layout from '../pages/Layout';
 import NotFoundPage from '../pages/NotFound';
+import routes from './routes';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,14 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <HomePage />,
+      },
+      {
+        path: routes.tasks.index,
+        element: <h2>{routes.tasks.index}</h2>,
+      },
+      {
+        path: routes.designers.index,
+        element: <h2>{routes.designers.index}</h2>,
       },
     ],
   },
