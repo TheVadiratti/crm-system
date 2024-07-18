@@ -3,3 +3,8 @@ export enum Locales {
   russian = 'ru-RU',
   englishGB = 'en-GB',
 }
+
+export enum Themes {
+  light = 'light',
+  dark = 'dark',
+}

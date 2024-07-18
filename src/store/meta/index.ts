@@ -1,5 +1,5 @@
-import metaSlice, { changeLocale } from './slice';
+import metaSlice, { changeLocale, changeTheme } from './slice';
 
 export default metaSlice;
 
-export { changeLocale };
+export { changeLocale, changeTheme };

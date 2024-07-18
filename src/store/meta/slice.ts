@@ -1,12 +1,14 @@
 import { createSlice, type PayloadAction } from '@reduxjs/toolkit';
-import { Locales } from '../../utils/constants';
+import { Locales, Themes } from '../../utils/constants';
 
 interface MetaSliceState {
   locale: Locales;
+  theme: Themes;
 }
 
 const initialState = {
   locale: Locales.russian,
+  theme: Themes.light,
 } satisfies MetaSliceState as MetaSliceState;
 
 const metaSlice = createSlice({
@@ -19,8 +21,15 @@ const metaSlice = createSlice({
         locale: action.payload,
       };
     },
+
+    changeTheme: (state, action: PayloadAction<Themes>) => {
+      return {
+        ...state,
+        theme: action.payload,
+      };
+    },
   },
 });
 
-export const { changeLocale } = metaSlice.actions;
+export const { changeLocale, changeTheme } = metaSlice.actions;
 export default metaSlice;
