@@ -12,7 +12,7 @@ interface Props {
   children: ReactNode;
 }
 
-export default function ThemeProvider({ children }: Props) {
+export default function MetaProvider({ children }: Props) {
   const dispatch = useDispatch();
   const { theme: mode, locale: localeName } = useSelector(
     (state) => state.meta

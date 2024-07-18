@@ -2,7 +2,7 @@ import React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
-import ThemeProvider from './components/ThemeProvider';
+import MetaProvider from './components/MetaProvider';
 import './index.css';
 import RouterProvider from './router';
 import { store } from './store';
@@ -12,9 +12,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <CssBaseline />
     <Provider store={store}>
-      <ThemeProvider>
+      <MetaProvider>
         <RouterProvider />
-      </ThemeProvider>
+      </MetaProvider>
     </Provider>
   </React.StrictMode>
 );
