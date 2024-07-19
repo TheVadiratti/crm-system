@@ -34,6 +34,15 @@ export default function MetaProvider({ children }: Props) {
     () =>
       createTheme(
         {
+          breakpoints: {
+            values: {
+              xs: 0,
+              sm: 675,
+              md: 900,
+              lg: 1200,
+              xl: 1536,
+            },
+          },
           palette: {
             mode,
           },
