@@ -10,9 +10,9 @@ import './utils/i18n/i18n';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <CssBaseline />
     <Provider store={store}>
       <MetaProvider>
+        <CssBaseline />
         <RouterProvider />
       </MetaProvider>
     </Provider>
