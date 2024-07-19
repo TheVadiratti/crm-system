@@ -1,14 +1,14 @@
 import { useMemo } from 'react';
 import Avatar from '@mui/material/Avatar';
-import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardHeader from '@mui/material/CardHeader';
 import Divider from '@mui/material/Divider';
 import Typography from '@mui/material/Typography';
 import { useTranslation } from 'react-i18next';
-import { useSelector } from '../../store';
-import getTimePassedString from '../../utils/getTimePassedString';
+import { useSelector } from '../../../store';
+import getTimePassedString from '../../../utils/getTimePassedString';
+import Card from '../index';
 
 interface Props {
   authorName: string;
@@ -36,7 +36,7 @@ export default function CommentCard({
   );
 
   return (
-    <Card sx={{ borderRadius: 4, backgroundColor: 'background' }} elevation={8}>
+    <Card>
       <CardHeader
         avatar={<Avatar src={avatarSrc} alt={avatarAlt} />}
         title={`${localize('CommentCard.user')}: ${authorName}`}

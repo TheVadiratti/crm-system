@@ -1,7 +1,7 @@
 import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import { useTranslation } from 'react-i18next';
-import CommentCard from '../../components/CommentCard';
+import CommentCard from '../../components/Card/CommentCard';
 import PageContainer from '../../components/PageContainer';
 import PageSection from '../../components/PageSection';
 import { useGetCommentsQuery } from '../../services/comments';
