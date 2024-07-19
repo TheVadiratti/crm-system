@@ -15,7 +15,10 @@ export default function HeaderDesktop() {
   const isUpMd = useMediaQuery(theme.breakpoints.up('md'));
 
   return (
-    <AppBar position="sticky" sx={{ p: '10px 0' }}>
+    <AppBar
+      position="sticky"
+      sx={{ p: '10px 0', backgroundColor: 'background.paper' }}
+    >
       <Container
         sx={{
           display: 'flex',
@@ -27,7 +30,11 @@ export default function HeaderDesktop() {
           <Typography
             component="h1"
             variant="h4"
-            sx={{ display: 'flex', alignItems: 'end' }}
+            sx={{
+              display: 'flex',
+              alignItems: 'end',
+              color: 'text.primary',
+            }}
           >
             CRM
           </Typography>

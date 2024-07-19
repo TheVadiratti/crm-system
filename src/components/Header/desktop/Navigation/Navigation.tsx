@@ -15,12 +15,7 @@ export default function Navigation() {
   };
 
   return (
-    <Tabs
-      value={location.pathname}
-      onChange={handleChange}
-      textColor="secondary"
-      indicatorColor="secondary"
-    >
+    <Tabs value={location.pathname} onChange={handleChange}>
       <Tab label={localize('pageHeaders.main')} value={routes.main.index} />
       <Tab label={localize('pageHeaders.tasks')} value={routes.tasks.index} />
       <Tab
