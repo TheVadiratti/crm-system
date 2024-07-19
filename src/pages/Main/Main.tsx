@@ -10,7 +10,7 @@ export default function MainPage() {
   return (
     <PageContainer>
       <Grid container sx={{ py: 2 }}>
-        <Grid item xs={8} spacing={2}>
+        <Grid item md={12} lg={8} spacing={2}>
           {isCommentsSuccess && <LastCommentsSection comments={comments} />}
         </Grid>
       </Grid>
