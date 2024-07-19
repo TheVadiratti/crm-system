@@ -3,8 +3,8 @@ import {
   Outlet,
   RouterProvider as RootRouterProvider,
 } from 'react-router-dom';
-import HomePage from '../pages/Home';
 import Layout from '../pages/Layout';
+import MainPage from '../pages/Main';
 import NotFoundPage from '../pages/NotFound';
 import routes from './routes';
 
@@ -19,7 +19,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <HomePage />,
+        element: <MainPage />,
       },
       {
         path: routes.tasks.index,

@@ -12,23 +12,45 @@ const resources: Resources = {
         designers: 'Дизайнеры',
       },
 
+      sectionHeadings: {
+        lastComments: 'Последние комментарии',
+        topDesigners: 'Лучшие дизайнеры',
+      },
+
       header: {
         weekNumber: 'Неделя №',
         heading: 'Навигация',
+      },
+
+      CommentCard: {
+        user: 'Пользователь',
+        issue: 'Задача',
+        timePassedSinceCreated: 'назад',
       },
     },
   },
   en: {
     translation: {
       pageHeaders: {
-        main: 'Home',
+        main: 'Main',
         tasks: 'Tasks',
         designers: 'Designers',
+      },
+
+      sectionHeadings: {
+        lastComments: 'Last comments',
+        topDesigners: 'Top designers',
       },
 
       header: {
         weekNumber: 'Week №',
         heading: 'Navigation',
+      },
+
+      CommentCard: {
+        user: 'User',
+        issue: 'Issue',
+        timePassedSinceCreated: 'ago',
       },
     },
   },
