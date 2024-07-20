@@ -9,7 +9,13 @@ export default function WeekNumber() {
   const weekNumber = useMemo(() => getWeek(new Date()), []);
 
   return (
-    <Typography variant="body2" component="p">
+    <Typography
+      variant="body2"
+      component="p"
+      color="common.white"
+      textAlign="center"
+      sx={{ minWidth: '92px' }}
+    >
       {`${localize('header.weekNumber')} `}
       <Typography variant="body2" component="strong" fontWeight={800}>
         {weekNumber}

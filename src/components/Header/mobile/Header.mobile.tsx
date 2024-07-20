@@ -26,13 +26,16 @@ export default function HeaderMobile() {
           onClick={toggleDrawer(true)}
           sx={{
             width: 'fit-content',
-            '&.MuiIconButton-colorPrimary': {
-              color: 'text.primary',
-            },
           }}
           size="large"
         >
-          <MenuIcon fontSize="large" />
+          <MenuIcon
+            fontSize="large"
+            color="action"
+            sx={{
+              color: 'common.white',
+            }}
+          />
         </IconButton>
         <WeekNumber />
       </Container>

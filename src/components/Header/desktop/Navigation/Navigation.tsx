@@ -1,9 +1,17 @@
 import { type SyntheticEvent } from 'react';
+import { SxProps, Theme } from '@mui/material';
 import Tab from '@mui/material/Tab';
 import Tabs from '@mui/material/Tabs';
 import { useTranslation } from 'react-i18next';
 import { useLocation, useNavigate } from 'react-router-dom';
 import routes from '../../../../router/routes';
+
+const TabSxStyles: SxProps<Theme> = {
+  color: 'common.white',
+  '&.Mui-selected': {
+    color: 'common.white',
+  },
+};
 
 export default function Navigation() {
   const { t: localize } = useTranslation();
@@ -15,12 +23,29 @@ export default function Navigation() {
   };
 
   return (
-    <Tabs value={location.pathname} onChange={handleChange}>
-      <Tab label={localize('pageHeaders.main')} value={routes.main.index} />
-      <Tab label={localize('pageHeaders.tasks')} value={routes.tasks.index} />
+    <Tabs
+      value={location.pathname}
+      onChange={handleChange}
+      sx={{
+        '.MuiTabs-indicator': {
+          backgroundColor: 'common.white',
+        },
+      }}
+    >
+      <Tab
+        label={localize('pageHeaders.main')}
+        value={routes.main.index}
+        sx={TabSxStyles}
+      />
+      <Tab
+        label={localize('pageHeaders.tasks')}
+        value={routes.tasks.index}
+        sx={TabSxStyles}
+      />
       <Tab
         label={localize('pageHeaders.designers')}
         value={routes.designers.index}
+        sx={TabSxStyles}
       />
     </Tabs>
   );
