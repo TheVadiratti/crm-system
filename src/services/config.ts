@@ -8,7 +8,7 @@ export default {
     // Они должны заканчиваться на -s.
     comments: '/comment/', // '/comments' и т.д.
     projects: '/project',
-    designers: '/designer',
+    designers: '/designer/',
     issues: '/issue',
   },
 } as const;

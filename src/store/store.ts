@@ -4,18 +4,18 @@ import {
   combineSlices,
   type Reducer,
 } from '@reduxjs/toolkit';
-import commentsApi from '../services/comments';
+import api from '../services/api';
 import metaSlice from './meta';
 
 const rootReducer: Reducer = combineSlices({
   [metaSlice.name]: metaSlice.reducer,
-  [commentsApi.reducerPath]: commentsApi.reducer,
+  [api.reducerPath]: api.reducer,
 });
 
 export const store: Store = configureStore({
   reducer: rootReducer,
   middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(commentsApi.middleware),
+    getDefaultMiddleware().concat(api.middleware),
 });
 
 export type RootState = ReturnType<typeof store.getState>;

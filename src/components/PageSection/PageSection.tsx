@@ -11,7 +11,11 @@ interface Props {
 export default function PageSection({ heading, children }: Props) {
   return (
     <Paper
-      sx={{ backgroundColor: 'background', p: 2, borderRadius: 4 }}
+      sx={{
+        backgroundColor: 'background',
+        p: 2,
+        borderRadius: 4,
+      }}
       elevation={-1}
     >
       <Stack spacing={2} component="section">

@@ -21,6 +21,11 @@ interface LangResources {
       issue: string;
       timePassedSinceCreated: string;
     };
+
+    DesignerCard: {
+      completedIssuesCount: string;
+      issueMedianTime: string;
+    };
   };
 }
 

@@ -27,6 +27,11 @@ const resources: Resources = {
         issue: 'Задача',
         timePassedSinceCreated: 'назад',
       },
+
+      DesignerCard: {
+        completedIssuesCount: 'Закрытых задач',
+        issueMedianTime: 'Часов на задачу (медиана)',
+      },
     },
   },
   en: {
@@ -51,6 +56,11 @@ const resources: Resources = {
         user: 'User',
         issue: 'Issue',
         timePassedSinceCreated: 'ago',
+      },
+
+      DesignerCard: {
+        completedIssuesCount: 'Completed issues',
+        issueMedianTime: 'Issue median time',
       },
     },
   },
