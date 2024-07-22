@@ -8,15 +8,17 @@ interface Props {
   comments: CommentDto[];
 }
 
+const MAX_LIST_LENGTH = 10;
+
 export default function LastCommentsSection({ comments }: Props) {
   const { t: localize } = useTranslation();
 
-  const lastTenComments = comments.slice(-10).reverse();
+  const displayData = comments.slice(MAX_LIST_LENGTH * -1).reverse();
 
   return (
     <PageSection heading={localize('sectionHeadings.lastComments')}>
       <Stack spacing={2}>
-        {lastTenComments.map((comment) => (
+        {displayData.map((comment) => (
           <CommentCard
             authorName={comment.designer.username}
             issueName={comment.issue}
