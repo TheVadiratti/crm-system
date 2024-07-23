@@ -48,7 +48,7 @@ export default function mapFromDtoToDisplayData(
   // Сортирует и обрезает до топ 10.
   return lodash.orderBy(
     displayData,
-    ['completedIssuesCount', 'issueMedianTime'],
+    ['doneIssuesCount', 'issueMedianTime'],
     ['desc', 'asc']
   );
 }
