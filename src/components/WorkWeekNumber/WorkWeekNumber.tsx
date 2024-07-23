@@ -1,12 +1,12 @@
 import { useMemo } from 'react';
 import Typography from '@mui/material/Typography';
 import { useTranslation } from 'react-i18next';
-import getWeek from '../../utils/getWeek';
+import getWorkWeek from '../../utils/getWorkWeek';
 
-export default function WeekNumber() {
+export default function WorkWeekNumber() {
   const { t: localize } = useTranslation();
 
-  const weekNumber = useMemo(() => getWeek(new Date()), []);
+  const workWeekNumber = useMemo(() => getWorkWeek(new Date()), []);
 
   return (
     <Typography
@@ -18,7 +18,7 @@ export default function WeekNumber() {
     >
       {`${localize('header.weekNumber')} `}
       <Typography variant="body2" component="strong" fontWeight={800}>
-        {weekNumber}
+        {workWeekNumber}
       </Typography>
     </Typography>
   );

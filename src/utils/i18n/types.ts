@@ -19,7 +19,6 @@ interface LangResources {
     CommentCard: {
       user: string;
       issue: string;
-      timePassedSinceCreated: string;
     };
 
     DesignerCard: {

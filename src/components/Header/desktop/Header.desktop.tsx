@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import LocaleSelect from '../../LocaleSelect';
 import ThemeSwitch from '../../ThemeSwitch';
-import WeekNumber from '../../WeekNumber';
+import WorkWeekNumber from '../../WorkWeekNumber';
 import Navigation from './Navigation';
 
 export default function HeaderDesktop() {
@@ -40,7 +40,7 @@ export default function HeaderDesktop() {
         <Stack direction="row" spacing={isUpMd ? 2 : 0.5} alignItems="center">
           <LocaleSelect />
           <ThemeSwitch />
-          <WeekNumber />
+          <WorkWeekNumber />
         </Stack>
       </Container>
     </AppBar>

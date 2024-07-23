@@ -3,7 +3,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import AppBar from '@mui/material/AppBar';
 import Container from '@mui/material/Container';
 import IconButton from '@mui/material/IconButton';
-import WeekNumber from '../../WeekNumber';
+import WorkWeekNumber from '../../WorkWeekNumber';
 import Drawer from './Drawer';
 
 export default function HeaderMobile() {
@@ -37,7 +37,7 @@ export default function HeaderMobile() {
             }}
           />
         </IconButton>
-        <WeekNumber />
+        <WorkWeekNumber />
       </Container>
 
       <Drawer open={isOpenDrawer} onClose={toggleDrawer(false)} />

@@ -18,5 +18,6 @@ export default function getTimePassedString(from: string, localeName?: string) {
 
   return formatDistance(new Date(from), new Date(), {
     locale,
+    addSuffix: true,
   });
 }

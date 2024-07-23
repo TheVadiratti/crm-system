@@ -25,7 +25,6 @@ const resources: Resources = {
       CommentCard: {
         user: 'Пользователь',
         issue: 'Задача',
-        timePassedSinceCreated: 'назад',
       },
 
       DesignerCard: {
@@ -55,7 +54,6 @@ const resources: Resources = {
       CommentCard: {
         user: 'User',
         issue: 'Issue',
-        timePassedSinceCreated: 'ago',
       },
 
       DesignerCard: {

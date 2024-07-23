@@ -49,7 +49,7 @@ export default function CommentCard({
       <Divider />
       <CardActions sx={{ display: 'flex', justifyContent: 'center', px: 2 }}>
         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-          {`${timePassedSinceCreated} ${localize('CommentCard.timePassedSinceCreated')}`}
+          {timePassedSinceCreated}
         </Typography>
       </CardActions>
     </Card>
