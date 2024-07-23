@@ -2,16 +2,13 @@ import Grid from '@mui/material/Grid';
 import PageContainer from '../../components/PageContainer';
 import LastCommentsSection from '../../components/PageSection/LastCommentsSection';
 import TopDesignersSection from '../../components/PageSection/TopDesignersSection';
-import { useGetCommentsQuery } from '../../services/comments';
-import { useGetDesignersQuery } from '../../services/designers';
+import useData from './hooks/useData';
 
 export default function MainPage() {
-  const { data: comments = [], isSuccess: isCommentsSuccess } =
-    useGetCommentsQuery();
-  const { data: designers = { results: [] }, isSuccess: isDesignersSuccess } =
-    useGetDesignersQuery();
-
-  const isSuccess = isCommentsSuccess && isDesignersSuccess;
+  const {
+    data: { comments, designers },
+    isSuccess,
+  } = useData();
 
   return (
     <PageContainer>
