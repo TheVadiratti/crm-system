@@ -11,7 +11,7 @@ interface Props {
   avatarSrc: string;
   avatarAlt: string;
   issueMedianTime: number;
-  completedIssuesCount: number;
+  doneIssuesCount: number;
   ratingPosition: number;
 }
 
@@ -20,7 +20,7 @@ export default function DesignerCard({
   avatarSrc,
   avatarAlt,
   issueMedianTime,
-  completedIssuesCount,
+  doneIssuesCount,
   ratingPosition,
 }: Props) {
   const { t: localize } = useTranslation();
@@ -36,7 +36,7 @@ export default function DesignerCard({
       />
       <Divider />
       <CardContent>
-        <Typography variant="body2">{`${localize('DesignerCard.completedIssuesCount')}: ${completedIssuesCount}`}</Typography>
+        <Typography variant="body2">{`${localize('DesignerCard.completedIssuesCount')}: ${doneIssuesCount}`}</Typography>
         <Typography variant="body2">{`${localize('DesignerCard.issueMedianTime')}: ${issueMedianTime}`}</Typography>
       </CardContent>
     </Card>

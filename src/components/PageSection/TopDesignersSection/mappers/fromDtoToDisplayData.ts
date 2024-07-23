@@ -5,7 +5,7 @@ import getMedianNumberFromArray from '../../../../utils/getMedianNumberFromArray
 
 interface DesignerDisplayData extends DesignerDto {
   issueMedianTime: number;
-  completedIssuesCount: number;
+  doneIssuesCount: number;
 }
 
 export default function mapFromDtoToDisplayData(
@@ -41,7 +41,7 @@ export default function mapFromDtoToDisplayData(
       issueMedianTime: forMedianCalcArray.length
         ? getMedianNumberFromArray(forMedianCalcArray as number[])
         : 0,
-      completedIssuesCount: forMedianCalcArray.length,
+      doneIssuesCount: forMedianCalcArray.length,
     };
   });
 

@@ -27,7 +27,7 @@ export default function TopDesignersSection({ designers }: Props) {
           avatarSrc={designer.avatar}
           avatarAlt={designer.username}
           issueMedianTime={designer.issueMedianTime}
-          completedIssuesCount={designer.completedIssuesCount}
+          doneIssuesCount={designer.doneIssuesCount}
           ratingPosition={index + 1}
           key={designer.email}
         />
