@@ -17,10 +17,10 @@ export default function MainPage() {
     <PageContainer>
       {isSuccess && (
         <Grid container sx={{ py: 2 }} spacing={2}>
-          <Grid item md={12} lg={8}>
+          <Grid item sm={12} md={8}>
             <LastCommentsSection comments={comments} />
           </Grid>
-          <Grid item md={12} lg={4}>
+          <Grid item xs={12} sm={12} md={4}>
             <TopDesignersSection designers={designers.results} />
           </Grid>
         </Grid>
