@@ -37,6 +37,12 @@ interface LangResources {
       expenses: string;
       profit: string;
     };
+
+    IssuesStatusesChart: {
+      New: string;
+      InProgress: string;
+      Done: string;
+    };
   };
 }
 

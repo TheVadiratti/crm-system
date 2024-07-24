@@ -43,6 +43,12 @@ const resources: Resources = {
         expenses: 'Расходы',
         profit: 'Прибыль',
       },
+
+      IssuesStatusesChart: {
+        New: 'Новые',
+        InProgress: 'В работе',
+        Done: 'Закрытые',
+      },
     },
   },
   en: {
@@ -83,6 +89,12 @@ const resources: Resources = {
         revenue: 'Revenue',
         expenses: 'Expenses',
         profit: 'Profit',
+      },
+
+      IssuesStatusesChart: {
+        New: 'New',
+        InProgress: 'In progress',
+        Done: 'Done',
       },
     },
   },

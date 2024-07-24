@@ -1,6 +1,7 @@
 import Grid from '@mui/material/Grid';
 import PageContainer from '../../components/PageContainer';
 import DoneIssuesChartSection from '../../components/PageSection/DoneIssuesChartSection';
+import IssuesStatusesChartSection from '../../components/PageSection/IssuesStatusesChartSection';
 import useData from './hooks/useData';
 
 export default function IssuesPage() {
@@ -16,8 +17,8 @@ export default function IssuesPage() {
           <Grid item md={12}>
             <DoneIssuesChartSection issues={issues} />
           </Grid>
-          <Grid item md={12}>
-            <p>Widget 2</p>
+          <Grid item md={6}>
+            <IssuesStatusesChartSection issues={issues} />
           </Grid>
         </Grid>
       )}

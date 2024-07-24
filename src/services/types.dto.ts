@@ -1,3 +1,5 @@
+// Если бы статусы были БЕЗ пробелов, то их можно было бы использовать в качестве ключей объектов. А так придётся писать
+// дополнительный код.
 export type IssuesStatusDto = 'New' | 'In Progress' | 'Done';
 
 export interface CommentDto {

@@ -15,6 +15,7 @@ import {
   YAxis,
 } from 'recharts';
 import { IssueDto } from '../../../services/types.dto';
+import { chartColors } from '../../../theme/colors';
 import PageSection from '../index';
 import mapFromDtoToChartData from './mappers/fromDtoToChartData/fromDtoToChartData';
 
@@ -66,17 +67,17 @@ export default function DoneIssuesChartSection({ issues }: Props) {
           <Bar
             dataKey="Revenue"
             name={localize('DoneIssuesChart.revenue')}
-            fill="#8884d8"
+            fill={chartColors[0]}
           />
           <Bar
             dataKey="Expenses"
             name={localize('DoneIssuesChart.expenses')}
-            fill="#5284a4"
+            fill={chartColors[1]}
           />
           <Bar
             dataKey="Profit"
             name={localize('DoneIssuesChart.profit')}
-            fill="#2244a2"
+            fill={chartColors[2]}
           />
         </BarChart>
       </ResponsiveContainer>
