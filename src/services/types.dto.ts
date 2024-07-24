@@ -1,3 +1,5 @@
+export type IssuesStatusDto = 'New' | 'In Progress' | 'Done';
+
 export interface CommentDto {
   id: number;
   issue: string;
@@ -25,7 +27,7 @@ interface IssueByDesignerDto {
   date_started_by_designer: string;
   // Лучше - finish_date_by_designer.
   date_finished_by_designer: string | null;
-  status: 'New' | 'In Progress' | 'Done';
+  status: IssuesStatusDto;
 }
 
 export interface DesignerDto {
@@ -48,4 +50,22 @@ export interface DesignersDto {
   previous: null;
   // Почему ResultS? Если это результат запроса списка дизайнеров, то он один - result.
   results: DesignerDto[];
+}
+
+// TaskDto...
+export interface IssueDto {
+  id: number;
+  status: IssuesStatusDto;
+  designer: string;
+  project: string;
+  date_created: string;
+  summary: string;
+  received_from_client: number;
+  send_to_project_manager: number;
+  send_to_account_manager: number;
+  send_to_designer: number;
+  date_updated: string;
+  date_started_by_designer: string;
+  date_finished_by_designer: string;
+  date_finished: string;
 }

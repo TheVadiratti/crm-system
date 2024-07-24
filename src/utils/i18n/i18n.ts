@@ -15,6 +15,8 @@ const resources: Resources = {
       sectionHeadings: {
         lastComments: 'Последние комментарии',
         topDesigners: 'Лучшие дизайнеры',
+        doneIssuesChart: 'Завершённые задачи (по номерам недели)',
+        issuesStatusesChart: 'Статусы задач',
       },
 
       header: {
@@ -31,6 +33,16 @@ const resources: Resources = {
         completedIssuesCount: 'Закрытых задач',
         issueMedianTime: 'Часов на задачу (медиана)',
       },
+
+      DoneIssuesChartSection: {
+        shownWeekNumber: 'Показывать недель',
+      },
+
+      DoneIssuesChart: {
+        revenue: 'Доходы',
+        expenses: 'Расходы',
+        profit: 'Прибыль',
+      },
     },
   },
   en: {
@@ -44,6 +56,8 @@ const resources: Resources = {
       sectionHeadings: {
         lastComments: 'Last comments',
         topDesigners: 'Top designers',
+        doneIssuesChart: 'Done issues (by week number)',
+        issuesStatusesChart: 'Issues statuses',
       },
 
       header: {
@@ -59,6 +73,16 @@ const resources: Resources = {
       DesignerCard: {
         completedIssuesCount: 'Completed issues',
         issueMedianTime: 'Issue median time',
+      },
+
+      DoneIssuesChartSection: {
+        shownWeekNumber: 'Show week',
+      },
+
+      DoneIssuesChart: {
+        revenue: 'Revenue',
+        expenses: 'Expenses',
+        profit: 'Profit',
       },
     },
   },

@@ -2,8 +2,8 @@ export default {
   main: {
     index: '/',
   },
-  tasks: {
-    index: '/tasks',
+  issues: {
+    index: '/issues',
   },
   designers: {
     index: '/designers',

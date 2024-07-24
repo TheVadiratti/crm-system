@@ -9,6 +9,8 @@ interface LangResources {
     sectionHeadings: {
       lastComments: string;
       topDesigners: string;
+      doneIssuesChart: string;
+      issuesStatusesChart: string;
     };
 
     header: {
@@ -24,6 +26,16 @@ interface LangResources {
     DesignerCard: {
       completedIssuesCount: string;
       issueMedianTime: string;
+    };
+
+    DoneIssuesChartSection: {
+      shownWeekNumber: string;
+    };
+
+    DoneIssuesChart: {
+      revenue: string;
+      expenses: string;
+      profit: string;
     };
   };
 }

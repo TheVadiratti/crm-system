@@ -16,7 +16,7 @@ export default function PageSection({ heading, children }: Props) {
         p: 2,
         borderRadius: 4,
       }}
-      elevation={-1}
+      elevation={1}
     >
       <Stack spacing={2} component="section">
         <Typography

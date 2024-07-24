@@ -39,7 +39,7 @@ export default function Navigation() {
       />
       <Tab
         label={localize('pageHeaders.tasks')}
-        value={routes.tasks.index}
+        value={routes.issues.index}
         sx={TabSxStyles}
       />
       <Tab

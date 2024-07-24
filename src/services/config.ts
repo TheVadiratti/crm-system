@@ -9,6 +9,6 @@ export default {
     comments: '/comment/', // '/comments' и т.д.
     projects: '/project',
     designers: '/designer/',
-    issues: '/issue',
+    issues: '/issue/',
   },
 } as const;

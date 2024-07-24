@@ -15,7 +15,7 @@ const buttons = [
   },
   {
     localizedLabel: 'pageHeaders.tasks',
-    to: routes.tasks.index,
+    to: routes.issues.index,
   },
   {
     localizedLabel: 'pageHeaders.designers',
