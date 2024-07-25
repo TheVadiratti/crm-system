@@ -11,17 +11,15 @@ export default function MainPage() {
   } = useData();
 
   return (
-    <PageContainer>
-      {isSuccess && (
-        <Grid container sx={{ py: 2 }} spacing={2}>
-          <Grid item sm={12} md={8}>
-            <LastCommentsSection comments={comments} />
-          </Grid>
-          <Grid item xs={12} sm={12} md={4}>
-            <TopDesignersSection designers={designers.results} />
-          </Grid>
+    <PageContainer isLoading={!isSuccess}>
+      <Grid container sx={{ py: 2 }} spacing={2}>
+        <Grid item sm={12} md={8}>
+          <LastCommentsSection comments={comments} />
         </Grid>
-      )}
+        <Grid item xs={12} sm={12} md={4}>
+          <TopDesignersSection designers={designers.results} />
+        </Grid>
+      </Grid>
     </PageContainer>
   );
 }

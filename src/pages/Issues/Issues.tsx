@@ -11,7 +11,7 @@ export default function IssuesPage() {
   } = useData();
 
   return (
-    <PageContainer>
+    <PageContainer isLoading={!isSuccess}>
       {isSuccess && (
         <Grid container sx={{ py: 2 }} spacing={2}>
           <Grid item md={12}>
