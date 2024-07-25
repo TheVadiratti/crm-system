@@ -1,30 +1,41 @@
-# React + TypeScript + Vite
+# Проект "CRM система".
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 1. Описание:
 
-Currently, two official plugins are available:
+Проект CRM для дизайнеров. Состоит из 3 страниц:
+- **Главная** (последние комментарии и рейтинг дизайнеров);
+- **Задачи** (статистика на графиках по всем задачам);
+- **Дизайнеры** (таблица-список всех дизайнеров);
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Все данные подгружаются с API.
 
-## Expanding the ESLint configuration
+### 2. Особенности:
+- Адаптивный дизайн;
+- Локализация контента на двух языках: RU и EN;
+- Две темы оформления: светлая и тёмная;
+- Отображение номера рабочей недели;
+- Визуализация данных (2 графика);
+- Таблица данных (динамическая подгрузка по страницам, сортировка);
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 3. Использованные библиотеки:
+- **React** для всего;
+- **Redux** Toolkit для запроса и хранения данных;
+- **React Router Dom** для роутинга;
+- **Material UI** для готовых UI компонентов;
+- **i18n** для локализации контента;
+- **Lodash** для сокращения кода на рутинные операции;
+- **Recharts** для построения графиков;
+- **Date fns** для удобной работы с датами;
+- **ESLint (airbnb)** и **Prettier** для красоты кода.
 
-- Configure the top-level `parserOptions` property like this:
+### 4. Что удалось выполнить:
+Удалось выполнить - **всё**, кроме фильтрации в таблице дизайнеров. Отображаемые данные не
+позволяют фильтровать
+согласно ТЗ, необоходимо расписать подробнее.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-};
-```
+### 5. Трудозатраты:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+   - Период выполнения: 16 - 25 июля 2024 г.
+   - Время в работе: 42.75 часов.
+
+_Очень интересный проект, выполнял с удовольствием!_
