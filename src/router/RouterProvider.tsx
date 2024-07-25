@@ -3,6 +3,7 @@ import {
   Outlet,
   RouterProvider as RootRouterProvider,
 } from 'react-router-dom';
+import DesignersPage from '../pages/Designers';
 import IssuesPage from '../pages/Issues';
 import Layout from '../pages/Layout';
 import MainPage from '../pages/Main';
@@ -28,7 +29,7 @@ const router = createBrowserRouter([
       },
       {
         path: routes.designers.index,
-        element: <h2>{routes.designers.index}</h2>,
+        element: <DesignersPage />,
       },
     ],
   },

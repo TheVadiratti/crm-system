@@ -11,6 +11,7 @@ interface LangResources {
       topDesigners: string;
       doneIssuesChart: string;
       issuesStatusesChart: string;
+      designersTable: string;
     };
 
     header: {
@@ -42,6 +43,16 @@ interface LangResources {
       New: string;
       InProgress: string;
       Done: string;
+    };
+
+    DesignersTable: {
+      columnHeadings: {
+        avatar: string;
+        username: string;
+        email: string;
+        inProgressIssuesCount: string;
+        doneIssuesCount: string;
+      };
     };
   };
 }

@@ -1,4 +1,5 @@
 import designersApi from './designers.api';
 
-export const { useGetDesignersQuery } = designersApi;
+export const { useGetDesignersQuery, useGetDesignersByPageQuery } =
+  designersApi;
 export default designersApi;

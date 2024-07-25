@@ -48,7 +48,6 @@ export interface DesignerDto {
 export interface DesignersDto {
   count: number;
   next: string;
-  // Не понял, зачем это поле?
   previous: null;
   // Почему ResultS? Если это результат запроса списка дизайнеров, то он один - result.
   results: DesignerDto[];

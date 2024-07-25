@@ -17,6 +17,7 @@ const resources: Resources = {
         topDesigners: 'Лучшие дизайнеры',
         doneIssuesChart: 'Завершённые задачи (по номерам недели)',
         issuesStatusesChart: 'Статусы задач',
+        designersTable: 'Все дизайнеры',
       },
 
       header: {
@@ -49,6 +50,16 @@ const resources: Resources = {
         InProgress: 'В работе',
         Done: 'Закрытые',
       },
+
+      DesignersTable: {
+        columnHeadings: {
+          avatar: 'Аватар',
+          username: 'Имя',
+          email: 'Эл. почта',
+          inProgressIssuesCount: 'Задач в работе',
+          doneIssuesCount: 'Задач закрыто',
+        },
+      },
     },
   },
   en: {
@@ -64,6 +75,7 @@ const resources: Resources = {
         topDesigners: 'Top designers',
         doneIssuesChart: 'Done issues (by week number)',
         issuesStatusesChart: 'Issues statuses',
+        designersTable: 'All designers',
       },
 
       header: {
@@ -95,6 +107,16 @@ const resources: Resources = {
         New: 'New',
         InProgress: 'In progress',
         Done: 'Done',
+      },
+
+      DesignersTable: {
+        columnHeadings: {
+          avatar: 'Avatar',
+          username: 'Username',
+          email: 'Email',
+          inProgressIssuesCount: 'In Progress issues',
+          doneIssuesCount: 'Done issues',
+        },
       },
     },
   },
