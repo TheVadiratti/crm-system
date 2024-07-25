@@ -33,17 +33,17 @@ export default function Navigation() {
       }}
     >
       <Tab
-        label={localize('pageHeaders.main')}
+        label={localize('pageHeadings.main')}
         value={routes.main.index}
         sx={TabSxStyles}
       />
       <Tab
-        label={localize('pageHeaders.tasks')}
+        label={localize('pageHeadings.issues')}
         value={routes.issues.index}
         sx={TabSxStyles}
       />
       <Tab
-        label={localize('pageHeaders.designers')}
+        label={localize('pageHeadings.designers')}
         value={routes.designers.index}
         sx={TabSxStyles}
       />

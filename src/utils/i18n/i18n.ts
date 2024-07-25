@@ -6,9 +6,9 @@ import Resources from './types';
 const resources: Resources = {
   ru: {
     translation: {
-      pageHeaders: {
+      pageHeadings: {
         main: 'Главная',
-        tasks: 'Задачи',
+        issues: 'Задачи',
         designers: 'Дизайнеры',
       },
 
@@ -20,8 +20,8 @@ const resources: Resources = {
         designersTable: 'Все дизайнеры',
       },
 
-      header: {
-        weekNumber: 'Неделя №',
+      Header: {
+        weekNumber: 'Рабочая неделя №',
         heading: 'Навигация',
       },
 
@@ -64,9 +64,9 @@ const resources: Resources = {
   },
   en: {
     translation: {
-      pageHeaders: {
+      pageHeadings: {
         main: 'Main',
-        tasks: 'Tasks',
+        issues: 'Issues',
         designers: 'Designers',
       },
 
@@ -78,8 +78,8 @@ const resources: Resources = {
         designersTable: 'All designers',
       },
 
-      header: {
-        weekNumber: 'Week №',
+      Header: {
+        weekNumber: 'Work week №',
         heading: 'Navigation',
       },
 

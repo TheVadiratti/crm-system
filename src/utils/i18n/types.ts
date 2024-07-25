@@ -1,8 +1,8 @@
 interface LangResources {
   translation: {
-    pageHeaders: {
+    pageHeadings: {
       main: string;
-      tasks: string;
+      issues: string;
       designers: string;
     };
 
@@ -14,7 +14,7 @@ interface LangResources {
       designersTable: string;
     };
 
-    header: {
+    Header: {
       weekNumber: string;
       heading: string;
     };

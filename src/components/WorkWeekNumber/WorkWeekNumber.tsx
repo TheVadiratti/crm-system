@@ -16,7 +16,7 @@ export default function WorkWeekNumber() {
       textAlign="center"
       sx={{ minWidth: '92px' }}
     >
-      {`${localize('header.weekNumber')} `}
+      {`${localize('Header.weekNumber')} `}
       <Typography variant="body2" component="strong" fontWeight={800}>
         {workWeekNumber}
       </Typography>

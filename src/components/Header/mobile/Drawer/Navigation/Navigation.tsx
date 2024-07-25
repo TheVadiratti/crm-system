@@ -10,15 +10,15 @@ interface Props {
 
 const buttons = [
   {
-    localizedLabel: 'pageHeaders.main',
+    localizedLabel: 'pageHeadings.main',
     to: routes.main.index,
   },
   {
-    localizedLabel: 'pageHeaders.tasks',
+    localizedLabel: 'pageHeadings.issues',
     to: routes.issues.index,
   },
   {
-    localizedLabel: 'pageHeaders.designers',
+    localizedLabel: 'pageHeadings.designers',
     to: routes.designers.index,
   },
 ];
