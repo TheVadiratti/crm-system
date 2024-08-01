@@ -124,7 +124,7 @@ export default function DesignersTableSection() {
       <TablePagination
         component="div"
         count={designers.count}
-        rowsPerPage={17}
+        rowsPerPage={displayData.length}
         page={page}
         onPageChange={handleChangePage}
         sx={{
